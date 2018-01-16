@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'fog-aws'     #파일을 aws s3에 업로드 가능하게 해줌
+gem 'mini_magick' #이미지 크기조정 #imagemacik
+gem 'carrierwave' #파일 업로드 #1.로컬 업로드 #2. aws s3 업로드
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
